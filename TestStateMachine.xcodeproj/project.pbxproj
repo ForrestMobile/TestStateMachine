@@ -21,6 +21,13 @@
 		A8909A6B157DF28E008F1E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8909A49157DF28E008F1E40 /* Foundation.framework */; };
 		A8909A73157DF28E008F1E40 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8909A71157DF28E008F1E40 /* InfoPlist.strings */; };
 		A8909A76157DF28E008F1E40 /* TestStateMachineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A75157DF28E008F1E40 /* TestStateMachineTests.m */; };
+		A8909A81157DF427008F1E40 /* BaseState.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A80157DF427008F1E40 /* BaseState.m */; };
+		A8909A84157DF7DB008F1E40 /* DerivedState1.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A83157DF7DB008F1E40 /* DerivedState1.m */; };
+		A8909A87157DF7EA008F1E40 /* DerivedState2.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A86157DF7EA008F1E40 /* DerivedState2.m */; };
+		A8909A8A157DF7F5008F1E40 /* DerivedState3.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A89157DF7F5008F1E40 /* DerivedState3.m */; };
+		A8909A99157E0485008F1E40 /* UIViewState1.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A98157E0484008F1E40 /* UIViewState1.m */; };
+		A8909A9C157E04A2008F1E40 /* UIViewState2.m in Sources */ = {isa = PBXBuildFile; fileRef = A8909A9B157E04A1008F1E40 /* UIViewState2.m */; };
+		A8A9C267157F2E75002821CB /* UIViewState3.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A9C266157F2E75002821CB /* UIViewState3.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,22 +45,36 @@
 		A8909A47157DF28E008F1E40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8909A49157DF28E008F1E40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A8909A4B157DF28E008F1E40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A8909A4F157DF28E008F1E40 /* TestStateMachine-Info.plist */ = {isa = PBXFileReference; path = "TestStateMachine-Info.plist"; sourceTree = "<group>"; };
+		A8909A4F157DF28E008F1E40 /* TestStateMachine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestStateMachine-Info.plist"; sourceTree = "<group>"; };
 		A8909A51157DF28E008F1E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A8909A53157DF28E008F1E40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A8909A55157DF28E008F1E40 /* TestStateMachine-Prefix.pch */ = {isa = PBXFileReference; path = "TestStateMachine-Prefix.pch"; sourceTree = "<group>"; };
-		A8909A56157DF28E008F1E40 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8909A55157DF28E008F1E40 /* TestStateMachine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestStateMachine-Prefix.pch"; sourceTree = "<group>"; };
+		A8909A56157DF28E008F1E40 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A8909A57157DF28E008F1E40 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A8909A59157DF28E008F1E40 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A8909A59157DF28E008F1E40 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A8909A5A157DF28E008F1E40 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A8909A5D157DF28E008F1E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		A8909A60157DF28E008F1E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
 		A8909A67157DF28E008F1E40 /* TestStateMachineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestStateMachineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8909A68157DF28E008F1E40 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		A8909A70157DF28E008F1E40 /* TestStateMachineTests-Info.plist */ = {isa = PBXFileReference; path = "TestStateMachineTests-Info.plist"; sourceTree = "<group>"; };
+		A8909A70157DF28E008F1E40 /* TestStateMachineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestStateMachineTests-Info.plist"; sourceTree = "<group>"; };
 		A8909A72157DF28E008F1E40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A8909A74157DF28E008F1E40 /* TestStateMachineTests.h */ = {isa = PBXFileReference; path = TestStateMachineTests.h; sourceTree = "<group>"; };
+		A8909A74157DF28E008F1E40 /* TestStateMachineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestStateMachineTests.h; sourceTree = "<group>"; };
 		A8909A75157DF28E008F1E40 /* TestStateMachineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestStateMachineTests.m; sourceTree = "<group>"; };
+		A8909A7F157DF427008F1E40 /* BaseState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseState.h; sourceTree = "<group>"; };
+		A8909A80157DF427008F1E40 /* BaseState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseState.m; sourceTree = "<group>"; };
+		A8909A82157DF7DB008F1E40 /* DerivedState1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivedState1.h; sourceTree = "<group>"; };
+		A8909A83157DF7DB008F1E40 /* DerivedState1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DerivedState1.m; sourceTree = "<group>"; };
+		A8909A85157DF7EA008F1E40 /* DerivedState2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivedState2.h; sourceTree = "<group>"; };
+		A8909A86157DF7EA008F1E40 /* DerivedState2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DerivedState2.m; sourceTree = "<group>"; };
+		A8909A88157DF7F5008F1E40 /* DerivedState3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DerivedState3.h; sourceTree = "<group>"; };
+		A8909A89157DF7F5008F1E40 /* DerivedState3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DerivedState3.m; sourceTree = "<group>"; };
+		A8909A97157E0484008F1E40 /* UIViewState1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewState1.h; sourceTree = "<group>"; };
+		A8909A98157E0484008F1E40 /* UIViewState1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewState1.m; sourceTree = "<group>"; };
+		A8909A9A157E04A0008F1E40 /* UIViewState2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewState2.h; sourceTree = "<group>"; };
+		A8909A9B157E04A1008F1E40 /* UIViewState2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewState2.m; sourceTree = "<group>"; };
+		A8A9C265157F2E75002821CB /* UIViewState3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewState3.h; sourceTree = "<group>"; };
+		A8A9C266157F2E75002821CB /* UIViewState3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewState3.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +141,8 @@
 				A8909A5C157DF28E008F1E40 /* ViewController_iPhone.xib */,
 				A8909A5F157DF28E008F1E40 /* ViewController_iPad.xib */,
 				A8909A4E157DF28E008F1E40 /* Supporting Files */,
+				A8909AA1157E04CC008F1E40 /* States */,
+				A8909AA0157E04C1008F1E40 /* Views */,
 			);
 			path = TestStateMachine;
 			sourceTree = "<group>";
@@ -152,6 +175,34 @@
 				A8909A71157DF28E008F1E40 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8909AA0157E04C1008F1E40 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8A9C265157F2E75002821CB /* UIViewState3.h */,
+				A8A9C266157F2E75002821CB /* UIViewState3.m */,
+				A8909A97157E0484008F1E40 /* UIViewState1.h */,
+				A8909A98157E0484008F1E40 /* UIViewState1.m */,
+				A8909A9A157E04A0008F1E40 /* UIViewState2.h */,
+				A8909A9B157E04A1008F1E40 /* UIViewState2.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A8909AA1157E04CC008F1E40 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				A8909A7F157DF427008F1E40 /* BaseState.h */,
+				A8909A80157DF427008F1E40 /* BaseState.m */,
+				A8909A82157DF7DB008F1E40 /* DerivedState1.h */,
+				A8909A83157DF7DB008F1E40 /* DerivedState1.m */,
+				A8909A85157DF7EA008F1E40 /* DerivedState2.h */,
+				A8909A86157DF7EA008F1E40 /* DerivedState2.m */,
+				A8909A88157DF7F5008F1E40 /* DerivedState3.h */,
+				A8909A89157DF7F5008F1E40 /* DerivedState3.m */,
+			);
+			name = States;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +315,13 @@
 				A8909A54157DF28E008F1E40 /* main.m in Sources */,
 				A8909A58157DF28E008F1E40 /* AppDelegate.m in Sources */,
 				A8909A5B157DF28E008F1E40 /* ViewController.m in Sources */,
+				A8909A81157DF427008F1E40 /* BaseState.m in Sources */,
+				A8909A84157DF7DB008F1E40 /* DerivedState1.m in Sources */,
+				A8909A87157DF7EA008F1E40 /* DerivedState2.m in Sources */,
+				A8909A8A157DF7F5008F1E40 /* DerivedState3.m in Sources */,
+				A8909A99157E0485008F1E40 /* UIViewState1.m in Sources */,
+				A8909A9C157E04A2008F1E40 /* UIViewState2.m in Sources */,
+				A8A9C267157F2E75002821CB /* UIViewState3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +501,7 @@
 				A8909A7B157DF28E008F1E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8909A7C157DF28E008F1E40 /* Build configuration list for PBXNativeTarget "TestStateMachineTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +510,7 @@
 				A8909A7E157DF28E008F1E40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
